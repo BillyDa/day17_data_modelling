@@ -16,7 +16,12 @@ p room_201
 room[:data][:events].each do |num|
   if num[:room_id] == 1 && num[:attendees] <= 50
     p "ok"
+  elsif num[:room_id] == 2 && num[:attendees] <= 200
+    p "ok"
+  elsif num[:room_id] == 3 && num[:attendees] <= 100
+    p "ok"
+  else
+    p "Will not fit"
   end
-    # print "find another venue"
-
 end
+  
